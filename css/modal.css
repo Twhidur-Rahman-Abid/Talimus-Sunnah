@@ -13,31 +13,46 @@
   padding: 40px;
 }
 
-.checkbox-box {
-  width: 142px;
-  height: 80px;
-  cursor: pointer;
-  border-radius: 8px;
-  border: 1px solid var(--color-border);
+.date-picker {
+  max-width: 488px;
 
-  input[type="checkbox"] {
-    position: absolute;
-    inset: 0;
-    appearance: none;
-    border-radius: 8px;
+  .checkbox-box {
+    min-width: fit-content;
+    height: 80px;
     cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
 
-    &:checked {
+    label {
+      cursor: pointer;
+    }
+
+    input[type="checkbox"] {
+      position: absolute;
+      inset: 0;
       appearance: none;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      background: var(--color-primary);
-      color: white;
+      border-radius: 7px;
+      cursor: pointer;
 
-      & + label {
+      &:checked {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: var(--color-primary);
         color: white;
+
+        & + label {
+          color: white;
+        }
       }
     }
+  }
+
+  .gradient-checkbox {
+    border: 1px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+      linear-gradient(34.88deg, #00a32e 10.96%, #d6c800 84.58%) border-box;
+    border-radius: 8px;
   }
 }
 
@@ -48,5 +63,9 @@
 
   .padding-40 {
     padding: 16px;
+  }
+
+  .date-picker {
+    width: 328px;
   }
 }

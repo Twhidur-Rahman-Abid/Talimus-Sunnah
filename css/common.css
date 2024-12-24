@@ -184,6 +184,10 @@ p {
 /*                                   Button                                   */
 /* -------------------------------------------------------------------------- */
 
+/* -------------------------------------------------------------------------- */
+/*                                  Grid line                                 */
+/* -------------------------------------------------------------------------- */
+
 .btn {
   border-radius: 100px;
   font-size: 16px;
@@ -490,40 +494,20 @@ footer {
   padding: 331px 0 40px 0;
   background: var(--color-primary-50);
 
-  .line {
-    height: 1px;
-    width: 100%;
-
-    background: linear-gradient(
-      90deg,
-      rgba(186, 186, 186, 0) 0%,
-      rgba(0, 163, 46, 0.42) 51.5%,
-      rgba(186, 186, 186, 0) 100%
-    );
-  }
-
   .footer-middle {
     & > div:not(:last-child) {
-      position: relative;
-
-      &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        width: 1px; /* Border width */
-        background: linear-gradient(
-          rgba(186, 186, 186, 0) 0%,
-          rgba(0, 163, 46, 0.42) 51.5%,
-          rgba(186, 186, 186, 0) 100%
-        );
-      }
+      border-inline-end: 1px solid;
+      border-image-source: linear-gradient(
+        rgba(186, 186, 186, 0) 0%,
+        #00a32e 51.5%,
+        rgba(186, 186, 186, 0) 100%
+      );
+      border-image-slice: 1;
     }
 
-    /* & > div:not(:first-child) {
-      padding-left: 25px;
-    } */
+    & > div:not(:first-child) {
+      padding-inline-start: 40px;
+    }
   }
 }
 
@@ -559,81 +543,63 @@ footer {
 
   footer {
     .footer-middle {
-      /* & > div:not(:last-child) {
-        position: relative;
-
-        &::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          width: 1px; 
-          background: linear-gradient(
-            rgba(186, 186, 186, 0) 0%,
-            rgba(0, 163, 46, 0.42) 100%
-          );
+      gap: 0;
+      & > div {
+        &:nth-child(1) {
+          border: none;
         }
-      } */
 
-      & > div:nth-child(1) {
-        position: relative;
-
-        &::after {
-          background: linear-gradient(
-            rgba(186, 186, 186, 0) 0%,
-            rgba(0, 163, 46, 0.42) 100%
+        &:nth-child(2) {
+          border-inline-start: 0.5px solid;
+          border-block-end: 0.5px solid;
+          border-image-source: radial-gradient(
+            circle at bottom left,
+            var(--color-primary),
+            rgba(186, 186, 186, 0) 50%
           );
+          border-image-slice: 1;
+
+          padding-left: 40px;
+          padding-bottom: 40px;
         }
-      }
 
-      & > div:nth-child(2) {
-        position: relative;
-
-        &::after {
-          position: absolute;
-          top: 100%;
-          left: 0;
-          right: 0;
-          height: 1px;
-          width: 100%;
-          background: linear-gradient(
-            rgba(0, 163, 46, 0.42) 0%,
-            rgba(186, 186, 186, 0) 100%
+        &:nth-child(1) {
+          border-inline-end: 0.5px solid;
+          border-block-end: 0.5px solid;
+          border-image-source: radial-gradient(
+            circle at bottom right,
+            var(--color-primary),
+            rgba(186, 186, 186, 0) 50%
           );
+          border-image-slice: 1;
+          padding-bottom: 40px;
         }
-      }
 
-      & > div:nth-child(3) {
-        position: relative;
-
-        &::after {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          height: 1px;
-          width: 100%;
-          background: linear-gradient(
-            rgba(0, 163, 46, 0.42) 0%,
-            rgba(186, 186, 186, 0) 100%
+        &:nth-child(3) {
+          border-inline-end: 0.5px solid;
+          border-block-start: 0.5px solid;
+          border-image-source: radial-gradient(
+            circle at top right,
+            var(--color-primary),
+            rgba(186, 186, 186, 0) 50%
           );
+          border-image-slice: 1;
+
+          padding-top: 40px;
         }
-      }
 
-      & > div:nth-child(4) {
-        position: relative;
-        &::after {
-          position: absolute;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          width: 1px;
-
-          background: linear-gradient(
-            rgba(0, 163, 46, 0.42) 0%,
-            rgba(186, 186, 186, 0) 100%
+        &:nth-child(4) {
+          border-inline-start: 0.5px solid;
+          border-block-start: 0.5px solid;
+          border-image-source: radial-gradient(
+            circle at top left,
+            var(--color-primary),
+            rgba(186, 186, 186, 0) 50%
           );
+          border-image-slice: 1;
+
+          padding-top: 40px;
+          padding-left: 40px;
         }
       }
     }
@@ -668,6 +634,33 @@ footer {
     p {
       font-size: 14px;
       margin-bottom: 0;
+    }
+  }
+
+  footer {
+    .footer-middle {
+      & > div {
+        padding-block: 0;
+        padding: 0;
+
+        &:not(:last-child) {
+          border-block-end: 1px solid;
+          padding-block: 32px;
+          padding-inline: 0;
+          border-image-source: linear-gradient(
+            90deg,
+            rgba(186, 186, 186, 0) 0%,
+            #00a32e 51.5%,
+            rgba(186, 186, 186, 0) 100%
+          );
+          border-image-slice: 1;
+        }
+
+        &:last-child {
+          border: none;
+          padding-inline: 0;
+        }
+      }
     }
   }
 }
