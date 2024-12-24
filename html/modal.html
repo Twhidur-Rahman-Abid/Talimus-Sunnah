@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/pricing.css" />
+    <link rel="stylesheet" href="../css/modal.css" />
+  </head>
+  <body
+    class="d-felx flex-column g-5 justify-content-center align-items-center w-100"
+  >
+    <!-- Pricing Modal -->
+    <div class="card modal-card border-0 mx-w-fit">
+      <div class="gap-40 flex-lg-row">
+        <!-- Personal details -->
+        <div class="billing-details gap-32 padding-40 card">
+          <div class="d-flex justify-content-between">
+            <h5>Billing details</h5>
+            <div
+              class="small-btn gap-8 flex-row align-items-center text-nowrap"
+            >
+              use current location
+              <img src="../images/i-location-outline.svg" alt="" />
+            </div>
+          </div>
+
+          <!-- Input Info -->
+          <div class="gap-24">
+            <!-- Name -->
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control rounded-3 padding-12"
+                aria-label="Dollar amount (with dot and two decimal places)"
+                placeholder="email address"
+              />
+            </div>
+            <!-- phone -->
+            <div class="input-group">
+              <span class="input-group-text bg-transparent border-end-0">
+                <img src="../images/i-phone-outline.svg" alt="" />
+              </span>
+
+              <input
+                type="text"
+                class="form-control ps-0 border-start-0 rounded-3 padding-12 rounded-start-0"
+                aria-label="Dollar amount (with dot and two decimal places)"
+                placeholder="phone"
+              />
+            </div>
+            <!-- email -->
+            <div class="input-group">
+              <span class="input-group-text bg-transparent border-end-0">
+                <img src="../images/i-email-outline.svg" alt="" />
+              </span>
+
+              <input
+                type="text"
+                class="form-control ps-0 border-start-0 rounded-3 padding-12 rounded-start-0"
+                aria-label="Dollar amount (with dot and two decimal places)"
+                placeholder="email address"
+              />
+            </div>
+            <!-- country -->
+            <div class="input-group">
+              <span class="input-group-text bg-transparent border-end-0">
+                <img src="../images/i-country.svg" alt="" />
+              </span>
+
+              <input
+                type="text"
+                class="form-control ps-0 border-start-0 rounded-3 padding-12 rounded-start-0"
+                aria-label="Dollar amount (with dot and two decimal places)"
+                placeholder="Country"
+              />
+            </div>
+            <!-- location -->
+            <div class="input-group">
+              <span class="input-group-text bg-transparent border-end-0">
+                <img src="../images/i-location-outline-black.svg" alt="" />
+              </span>
+
+              <input
+                type="text"
+                class="form-control ps-0 border-start-0 rounded-3 padding-12 rounded-start-0"
+                aria-label="Dollar amount (with dot and two decimal places)"
+                placeholder="Location"
+              />
+            </div>
+            <!-- promo -->
+            <div class="input-group">
+              <span class="input-group-text bg-transparent border-end-0">
+                <img src="../images/i-promo.svg" alt="" />
+              </span>
+
+              <input
+                type="text"
+                class="form-control ps-0 border-start-0 rounded-3 padding-12 rounded-start-0"
+                aria-label="Dollar amount (with dot and two decimal places)"
+                placeholder="Promo code (If you have)"
+              />
+            </div>
+          </div>
+          <!-- agree -->
+          <div class="form-check gap-8 flex-row align-items-center">
+            <input
+              class="form-check-input mt-0"
+              type="checkbox"
+              value=""
+              id="flexCheckChecked"
+              checked
+            />
+            <label class="form-check-label fs-14 mb-0" for="flexCheckChecked">
+              Save this information for faster checkout next time
+            </label>
+          </div>
+        </div>
+
+        <!-- right -->
+        <div class="card padding-40 gap-32 flex-column align-content-between">
+          <div class="gap-32">
+            <!-- product -->
+            <div
+              class="gap-32 flex-row p-1 justify-content-between align-items-center"
+            >
+              <div class="gap-16 flex-row align-items-center">
+                <img
+                  class="black-and-white"
+                  src="../images/book-al-quran.svg"
+                  width="56px"
+                  alt=""
+                />
+                <p class="p-16">AL-QURAN</p>
+              </div>
+
+              <p class="p-18 fw-medium">$ 32.54</p>
+            </div>
+
+            <!-- price -->
+            <div class="gap-16">
+              <div class="d-flex justify-content-between">
+                <p class="p-16">sub total :</p>
+                <p class="p-16">$ 65.08</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p class="p-16">Shipping :</p>
+                <p class="p-16">Free</p>
+              </div>
+
+              <div class="border w-100"></div>
+              <div class="d-flex justify-content-between">
+                <p class="p-18 color-text">Total :</p>
+                <p class="p-18 color-text">$ 65.08</p>
+              </div>
+            </div>
+
+            <!-- payment method -->
+            <div class="gap-16">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="form-check gap-8 flex-row align-items-center">
+                  <input
+                    class="form-check-input mt-0"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault1"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Bank
+                  </label>
+                </div>
+
+                <div class="gap-8 flex-row">
+                  <img src="../images/card-visa.svg" alt="" />
+                  <img src="../images/card-mastar.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- payment method -->
+            <div class="gap-16">
+              <div class="form-check gap-8 flex-row align-items-center">
+                <input
+                  class="form-check-input mt-0"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault1"
+                />
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Bkash
+                </label>
+              </div>
+              <div class="form-check gap-8 flex-row align-items-center">
+                <input
+                  class="form-check-input mt-0"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault1"
+                />
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Nagad
+                </label>
+              </div>
+            </div>
+
+            <!--   Apply coupon -->
+            <div class="gap-16 flex-row">
+              <input
+                type="text"
+                class="form-control rounded-3 padding-12 w-100"
+                placeholder="Promo code (If you have)"
+              />
+              <button
+                class="gap-8 rounded-2 btn btn-lg border flex-row align-items-center justify-content-center text-lg-nowrap"
+              >
+                Apply coupon
+              </button>
+            </div>
+          </div>
+
+          <!-- submit -->
+          <div class="">
+            <button class="btn btn-primary bg-lg w-100">Confirm Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- personal modal -->
+
+    <div class="card border-none padding-40 gap-32 mx-w-fit">
+      <h5 class="text-center">Personal details</h5>
+      <div class="gap-24">
+        <!-- Name -->
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control rounded-3 padding-12"
+            aria-label="Dollar amount (with dot and two decimal places)"
+            placeholder="email address"
+          />
+        </div>
+        <!-- phone -->
+        <div class="input-group">
+          <span class="input-group-text bg-transparent border-end-0">
+            <img src="../images/i-phone-outline.svg" alt="" />
+          </span>
+
+          <input
+            type="text"
+            class="form-control ps-0 border-start-0 rounded-3 padding-12 rounded-start-0"
+            aria-label="Dollar amount (with dot and two decimal places)"
+            placeholder="phone"
+          />
+        </div>
+        <!-- email -->
+        <div class="input-group">
+          <span class="input-group-text bg-transparent border-end-0">
+            <img src="../images/i-email-outline.svg" alt="" />
+          </span>
+
+          <input
+            type="text"
+            class="form-control ps-0 border-start-0 rounded-3 padding-12 rounded-start-0"
+            aria-label="Dollar amount (with dot and two decimal places)"
+            placeholder="email address"
+          />
+        </div>
+        <!-- country -->
+        <div class="input-group">
+          <span class="input-group-text bg-transparent border-end-0">
+            <img src="../images/i-country.svg" alt="" />
+          </span>
+
+          <input
+            type="text"
+            class="form-control ps-0 border-start-0 rounded-3 padding-12 rounded-start-0"
+            aria-label="Dollar amount (with dot and two decimal places)"
+            placeholder="Country"
+          />
+        </div>
+        <!-- location -->
+        <div class="input-group">
+          <span class="input-group-text bg-transparent border-end-0">
+            <img src="../images/i-location-outline-black.svg" alt="" />
+          </span>
+
+          <input
+            type="text"
+            class="form-control ps-0 border-start-0 rounded-3 padding-12 rounded-start-0"
+            aria-label="Dollar amount (with dot and two decimal places)"
+            placeholder="Location"
+          />
+        </div>
+        <!-- promo -->
+        <div class="input-group">
+          <span class="input-group-text bg-transparent border-end-0">
+            <img src="../images/i-promo.svg" alt="" />
+          </span>
+
+          <input
+            type="text"
+            class="form-control ps-0 border-start-0 rounded-3 padding-12 rounded-start-0"
+            aria-label="Dollar amount (with dot and two decimal places)"
+            placeholder="Promo code (If you have)"
+          />
+        </div>
+      </div>
+      <button class="btn btn-primary bg-lg w-100">Next</button>
+    </div>
+
+    <!-- date picker -->
+    <div class="card border-none padding-40 gap-32 mx-w-fit">
+      <img src="../images/i-back-sm-arrow.svg" style="max-width: 20px" alt="" />
+      <h5 class="text-center">Select your desired course</h5>
+
+      <div class="row g-1">
+        <div class="col-4">
+          <div class="position-relative checkbox-box">
+            <input class="" type="checkbox" value="" />
+            <label
+              class="fs-14 mb-0 position-absolute top-50 start-50 translate-middle"
+            >
+              Quran
+            </label>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="position-relative checkbox-box">
+            <input class="" type="checkbox" value="" />
+            <label
+              class="fs-14 mb-0 position-absolute top-50 start-50 translate-middle"
+            >
+              Quran
+            </label>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="position-relative checkbox-box">
+            <input class="" type="checkbox" value="" />
+            <label
+              class="fs-14 mb-0 position-absolute top-50 start-50 translate-middle"
+            >
+              Quran
+            </label>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="position-relative checkbox-box">
+            <input class="" type="checkbox" value="" />
+            <label
+              class="fs-14 mb-0 position-absolute top-50 start-50 translate-middle"
+            >
+              Quran
+            </label>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="position-relative checkbox-box">
+            <input class="" type="checkbox" value="" />
+            <label
+              class="fs-14 mb-0 position-absolute top-50 start-50 translate-middle"
+            >
+              Quran
+            </label>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="position-relative checkbox-box">
+            <input class="" type="checkbox" value="" />
+            <label
+              class="fs-14 mb-0 position-absolute top-50 start-50 translate-middle"
+            >
+              Quran
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-primary bg-lg w-100">Next</button>
+    </div>
+  </body>
+</html>

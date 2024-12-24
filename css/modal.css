@@ -1,0 +1,52 @@
+.padding-40 {
+  padding: 40px;
+}
+
+.black-and-white {
+  filter: grayscale(100%);
+}
+
+.padding-12 {
+  padding: 12px;
+}
+.modal-card {
+  padding: 40px;
+}
+
+.checkbox-box {
+  width: 142px;
+  height: 80px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+
+  input[type="checkbox"] {
+    position: absolute;
+    inset: 0;
+    appearance: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:checked {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background: var(--color-primary);
+      color: white;
+
+      & + label {
+        color: white;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-card {
+    padding: 16px;
+  }
+
+  .padding-40 {
+    padding: 16px;
+  }
+}

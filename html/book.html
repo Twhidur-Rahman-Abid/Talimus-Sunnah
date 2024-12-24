@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/book.css" />
+  </head>
+  <body>
+    <!-- E-books -->
+    <section class="container e-books gap-60 flex-column">
+      <!--Section heading -->
+      <div class="gap-32">
+        <h3 class="section-heading text-center">
+          Our latest
+          <span class="title-container">
+            <span class="highlight"
+              >E-Book
+              <img class="svg-underline" src="../images/Vector.svg" alt="" />
+            </span>
+          </span>
+        </h3>
+
+        <div class="line"></div>
+      </div>
+
+      <div class="gap-60">
+        <!--Tab buttons -->
+
+        <div class="mx-auto w-100">
+          <ul
+            class="gap-16 flex-row justify-content-lg-center w-100 overflow-x-auto"
+            id="bookTab"
+            role="tablist"
+          >
+            <li class="nav-item text-nowrap" role="presentation">
+              <button
+                class="active btn btn-lg btn-primary-50"
+                id="allBooks-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#allBooks-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="allBooks-tab-pane"
+                aria-selected="true"
+              >
+                All Books
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="btn btn-lg bg-primary-50"
+                id="quran-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#quran-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="quran-tab-pane"
+                aria-selected="false"
+              >
+                Quran
+              </button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button
+                class="btn btn-lg bg-primary-50"
+                id="hadith-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#hadith-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="hadith-tab-pane"
+                aria-selected="false"
+              >
+                Hadith
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="btn btn-lg bg-primary-50"
+                id="academic-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#academic-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="academic-tab-pane"
+                aria-selected="false"
+              >
+                Academic
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="btn btn-lg bg-primary-50"
+                id="kids-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#kids-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="kids-tab-pane"
+                aria-selected="false"
+              >
+                Kids
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tab contetn -->
+        <div class="tab-content" id="bookTabContent">
+          <!-- All books -->
+          <div
+            class="tab-pane fade show active"
+            id="allBooks-tab-pane"
+            role="tabpanel"
+            aria-labelledby="allBooks-tab"
+            tabindex="0"
+          >
+            <!-- All books -->
+            <div class="row g-4">
+              <div class="col-12 col-md-6 col-lg-3">
+                <div
+                  class="book-card p-4 bg-white gap-16 align-items-center gradient-border"
+                >
+                  <img
+                    class="img-fluid w-100"
+                    src="../images/book-al-quran.svg"
+                    alt=""
+                  />
+                  <h5>Al-Quran</h5>
+
+                  <div class="gap-16 flex-row justify-content-between w-100">
+                    <div class="flex-grow-1">
+                      <button
+                        class="btn btn-lg btn-outline-success rounded-pill w-100 h-100"
+                      >
+                        View
+                      </button>
+                    </div>
+                    <button
+                      class="btn btn-p-18 btn-outline-success rounded-pill"
+                    >
+                      <img src="../images/download-01.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div
+                  class="book-card p-4 bg-white gap-16 align-items-center gradient-border"
+                >
+                  <img
+                    class="img-fluid w-100"
+                    src="../images/book-hadith.svg"
+                    alt=""
+                  />
+                  <h5>Hadith</h5>
+
+                  <div class="gap-16 flex-row justify-content-between w-100">
+                    <div class="flex-grow-1">
+                      <button
+                        class="btn btn-lg btn-outline-success rounded-pill w-100 h-100"
+                      >
+                        View
+                      </button>
+                    </div>
+                    <button
+                      class="btn btn-p-18 btn-outline-success rounded-pill"
+                    >
+                      <img src="../images/download-01.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div
+                  class="book-card p-4 bg-white gap-16 align-items-center gradient-border"
+                >
+                  <img
+                    class="img-fluid w-100"
+                    src="../images/book-academic.svg"
+                    alt=""
+                  />
+                  <h5>Academic</h5>
+
+                  <div class="gap-16 flex-row justify-content-between w-100">
+                    <div class="flex-grow-1">
+                      <button
+                        class="btn btn-lg btn-outline-success rounded-pill w-100 h-100"
+                      >
+                        View
+                      </button>
+                    </div>
+                    <button
+                      class="btn btn-p-18 btn-outline-success rounded-pill"
+                    >
+                      <img src="../images/download-01.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div
+                  class="book-card p-4 bg-white gap-16 align-items-center gradient-border"
+                >
+                  <img
+                    class="img-fluid w-100"
+                    src="../images/book-kis.svg"
+                    alt=""
+                  />
+                  <h5>Kids</h5>
+
+                  <div class="gap-16 flex-row justify-content-between w-100">
+                    <div class="flex-grow-1">
+                      <button
+                        class="btn btn-lg btn-outline-success rounded-pill w-100 h-100"
+                      >
+                        View
+                      </button>
+                    </div>
+                    <button
+                      class="btn btn-p-18 btn-outline-success rounded-pill"
+                    >
+                      <img src="../images/download-01.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quran -->
+
+          <div
+            class="tab-pane fade"
+            id="quran-tab-pane"
+            role="tabpanel"
+            aria-labelledby="quran-tab"
+            tabindex="0"
+          >
+            <div class="row g-4">
+              <div class="col-12 col-md-6 col-lg-3">
+                <div
+                  class="book-card p-4 bg-white gap-16 align-items-center gradient-border"
+                >
+                  <img
+                    class="img-fluid w-100"
+                    src="../images/book-al-quran.svg"
+                    alt=""
+                  />
+                  <h5>Al-Quran</h5>
+
+                  <div class="gap-16 flex-row justify-content-between w-100">
+                    <div class="flex-grow-1">
+                      <button
+                        class="btn btn-lg btn-outline-success rounded-pill w-100 h-100"
+                      >
+                        View
+                      </button>
+                    </div>
+                    <button
+                      class="btn btn-p-18 btn-outline-success rounded-pill"
+                    >
+                      <img src="../images/download-01.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-3">
+                <div
+                  class="book-card p-4 bg-white gap-16 align-items-center gradient-border"
+                >
+                  <img
+                    class="img-fluid w-100"
+                    src="../images/book-academic.svg"
+                    alt=""
+                  />
+                  <h5>Academic</h5>
+
+                  <div class="gap-16 flex-row justify-content-between w-100">
+                    <div class="flex-grow-1">
+                      <button
+                        class="btn btn-lg btn-outline-success rounded-pill w-100 h-100"
+                      >
+                        View
+                      </button>
+                    </div>
+                    <button
+                      class="btn btn-p-18 btn-outline-success rounded-pill"
+                    >
+                      <img src="../images/download-01.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div
+                  class="book-card p-4 bg-white gap-16 align-items-center gradient-border"
+                >
+                  <img
+                    class="img-fluid w-100"
+                    src="../images/book-kis.svg"
+                    alt=""
+                  />
+                  <h5>Kids</h5>
+
+                  <div class="gap-16 flex-row justify-content-between w-100">
+                    <div class="flex-grow-1">
+                      <button
+                        class="btn btn-lg btn-outline-success rounded-pill w-100 h-100"
+                      >
+                        View
+                      </button>
+                    </div>
+                    <button
+                      class="btn btn-p-18 btn-outline-success rounded-pill"
+                    >
+                      <img src="../images/download-01.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- hadith -->
+          <div
+            class="tab-pane fade"
+            id="hadith-tab-pane"
+            role="tabpanel"
+            aria-labelledby="hadith-tab"
+            tabindex="0"
+          >
+            <div class="row g-4">
+              <div class="col-12 col-md-6 col-lg-3">
+                <div
+                  class="book-card p-4 bg-white gap-16 align-items-center gradient-border"
+                >
+                  <img
+                    class="img-fluid w-100"
+                    src="../images/book-al-quran.svg"
+                    alt=""
+                  />
+                  <h5>Al-Quran</h5>
+
+                  <div class="gap-16 flex-row justify-content-between w-100">
+                    <div class="flex-grow-1">
+                      <button
+                        class="btn btn-lg btn-outline-success rounded-pill w-100 h-100"
+                      >
+                        View
+                      </button>
+                    </div>
+                    <button
+                      class="btn btn-p-18 btn-outline-success rounded-pill"
+                    >
+                      <img src="../images/download-01.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- academic -->
+          <div
+            class="tab-pane fade"
+            id="academic-tab-pane"
+            role="tabpanel"
+            aria-labelledby="academic-tab"
+            tabindex="0"
+          >
+            <div class="row g-4">
+              <div class="col-12 col-md-6 col-lg-3">
+                <div
+                  class="book-card p-4 bg-white gap-16 align-items-center gradient-border"
+                >
+                  <img
+                    class="img-fluid w-100"
+                    src="../images/book-al-quran.svg"
+                    alt=""
+                  />
+                  <h5>Al-Quran</h5>
+
+                  <div class="gap-16 flex-row justify-content-between w-100">
+                    <div class="flex-grow-1">
+                      <button
+                        class="btn btn-lg btn-outline-success rounded-pill w-100 h-100"
+                      >
+                        View
+                      </button>
+                    </div>
+                    <button
+                      class="btn btn-p-18 btn-outline-success rounded-pill"
+                    >
+                      <img src="../images/download-01.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- kids -->
+          <div
+            class="tab-pane fade"
+            id="kids-tab-pane"
+            role="tabpanel"
+            aria-labelledby="kids-tab"
+            tabindex="0"
+          >
+            <div class="row g-4">
+              <div class="col-12 col-md-6 col-lg-3">
+                <div
+                  class="book-card p-4 bg-white gap-16 align-items-center gradient-border"
+                >
+                  <img
+                    class="img-fluid w-100"
+                    src="../images/book-al-quran.svg"
+                    alt=""
+                  />
+                  <h5>Al-Quran</h5>
+
+                  <div class="gap-16 flex-row justify-content-between w-100">
+                    <div class="flex-grow-1">
+                      <button
+                        class="btn btn-lg btn-outline-success rounded-pill w-100 h-100"
+                      >
+                        View
+                      </button>
+                    </div>
+                    <button
+                      class="btn btn-p-18 btn-outline-success rounded-pill"
+                    >
+                      <img src="../images/download-01.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- our course -->
+    <section class="container gap-60 flex-column">
+      <!-- Section Heading -->
+      <div class="gap-32 flex-column justify-content-center">
+        <div class="gap-16 flex-column align-items-center">
+          <!-- Heading button -->
+          <button class="small-btn gap-8 flex-row align-items-center mx-auto">
+            <div class="circle-8"></div>
+            Suggest Course
+          </button>
+
+          <!--  heading -->
+          <h3 class="section-heading">
+            Check Our Other
+            <span class="title-container">
+              <span class="highlight"
+                >Courses
+                <img class="svg-underline" src="../images/Vector.svg" alt="" />
+              </span>
+            </span>
+          </h3>
+        </div>
+      </div>
+
+      <!-- cards -->
+      <div class="row g-3">
+        <div class="col-12 col-md-6">
+          <div class="card p-3 gap-24 flex-column gradient-border">
+            <div class="position-relative">
+              <img
+                src="../images/course-islamic-laguage.svg"
+                class="card-img-top"
+                width="100%"
+              />
+
+              <img
+                class="position-absolute top-50 start-50 translate-middle"
+                src="../images/i-paly.svg"
+                alt=""
+              />
+            </div>
+
+            <button class="small-btn">Language</button>
+            <div class="card-body p-0 gap-8 flex-column">
+              <h5 class="card-title color-text fw-bold">
+                All Islamic Language Course
+              </h5>
+              <p class="card-text">
+                We provide Quran lessons and all of our courses round the clock.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="card p-3 gap-24 flex-column gradient-border">
+            <div class="position-relative">
+              <img
+                src="../images/course-adhan.svg"
+                class="card-img-top"
+                width="100%"
+              />
+              <img class="position-absolute top-50 start-50 translate-middle""
+              src="../images/i-paly.svg" alt="" />
+            </div>
+
+            <button class="small-btn">Adhan</button>
+            <div class="card-body p-0 gap-8 flex-column">
+              <h5 class="card-title color-text fw-bold">
+                World best Adhan Course
+              </h5>
+              <p class="card-text">
+                We provide Quran lessons and all of our courses round the clock.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="container blog gap-60 flex-column">
+      <!-- Section Heading -->
+      <div class="gap-16 flex-column">
+        <!-- Heading button -->
+        <button class="small-btn gap-8 flex-row align-items-center mx-auto">
+          <div class="circle-8"></div>
+          Recent Blog
+        </button>
+        <!-- Heading -->
+        <h3 class="section-heading mx-auto">
+          Read updated
+          <span class="title-container">
+            <span class="highlight"
+              >journal
+              <img class="svg-underline" src="../images/Vector.svg" alt="" />
+            </span>
+          </span>
+        </h3>
+      </div>
+
+      <!-- Blog -->
+      <div class="gap-60">
+        <!-- Blogs card -->
+        <div class="row g-4">
+          <!-- card -->
+          <div class="col-12 col-lg-4">
+            <div class="blog-card gap-16 position-relative">
+              <div class="btn btn-lg bg-white position-absolute blog-btn">
+                Quran
+              </div>
+              <img src="../images/blog-1.svg" alt="" />
+              <h5>
+                How many times Bismillah repeated in
+                <span>Quran?<img src="../images/red-drow.svg" alt="" /></span>
+              </h5>
+              <div class="gap-10 flex-row align-items-center time">
+                <p>November 1, 2024</p>
+                <div></div>
+                <p>13 Min Read</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4">
+            <div class="blog-card gap-16 position-relative">
+              <div class="btn btn-lg bg-white position-absolute blog-btn">
+                Quran
+              </div>
+              <img src="../images/blog-hadith.svg" alt="" />
+              <h5>
+                How many times Subhān-Allāh repeated in
+                <span>Quran?<img src="../images/red-drow.svg" alt="" /></span>
+              </h5>
+              <div class="gap-10 flex-row align-items-center time">
+                <p>November 1, 2024</p>
+                <div></div>
+                <p>13 Min Read</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4">
+            <div class="blog-card gap-16 position-relative">
+              <div class="btn btn-lg bg-white position-absolute blog-btn">
+                Quran
+              </div>
+              <img src="../images/blog-adhan.svg" alt="" />
+              <h5>
+                How many times Alhamdulillah repeated in
+                <span>Quran?<img src="../images/red-drow.svg" alt="" /></span>
+              </h5>
+              <div class="gap-10 flex-row align-items-center time">
+                <p>November 1, 2024</p>
+                <div></div>
+                <p>13 Min Read</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Read more -->
+        <div class="d-flex justify-content-center">
+          <button class="btn btn-lg btn-primary rounded-pill">
+            See All Blogs
+          </button>
+          <button class="btn btn-p-18 btn-primary rounded-pill">
+            <img src="../images/arrow.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

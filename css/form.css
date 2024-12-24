@@ -1,0 +1,48 @@
+.sign-in-page {
+  min-height: 100vh;
+
+  .left-img {
+    max-width: 20vw;
+    min-height: 100%;
+    object-fit: cover;
+  }
+
+  .card-wrapper {
+    padding: 40px;
+
+    .card {
+      padding: 40px;
+      font-size: 16px;
+
+      .input-group {
+        input {
+          padding: 12px;
+        }
+      }
+
+      h4 {
+        font-size: 30px;
+        font-family: "";
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .sign-in-page {
+    .card-wrapper {
+      .card {
+        padding: 16px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .sign-in-page {
+    .card-wrapper {
+      padding: 16px;
+    }
+  }
+}
