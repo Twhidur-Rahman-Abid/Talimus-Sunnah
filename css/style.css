@@ -1463,16 +1463,18 @@ footer {
 
   /* Home page */
   .hero {
-    .spread {
-      left: -32px;
-      top: -38px;
-      transform: rotate(250deg);
-    }
-
     .text-box {
       h1 {
         font-size: 65px;
         max-width: min-content;
+
+        .spread {
+          max-width: 50px;
+          position: absolute;
+          left: -32px;
+          top: -38px;
+          transform: rotate(250deg);
+        }
       }
     }
   }
