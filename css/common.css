@@ -572,7 +572,7 @@ footer {
             rgba(186, 186, 186, 0) 50%
           );
           border-image-slice: 1;
-          padding-bottom: 40px;
+          padding: 0;
         }
 
         &:nth-child(3) {
@@ -586,6 +586,7 @@ footer {
           border-image-slice: 1;
 
           padding-top: 40px;
+          padding-inline-start: 0;
         }
 
         &:nth-child(4) {
