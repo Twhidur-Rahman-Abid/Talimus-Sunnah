@@ -15,7 +15,7 @@
 
     <title>Document</title>
   </head>
-  <body class="">
+  <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
@@ -77,13 +77,14 @@
 
             <div class="header-buttons gap-16 flex-row align-items-center">
               <div id="nav-small-btn">
-                <button class="active">BN</button>
-                <button class="">EN</button>
+                <a href="" class="active">BN</a>
+                <a href="" class="">BN</a>
               </div>
+
               <img src="./images/search.svg" alt="" />
-              <button class="btn btn-outline-success rounded-pill">
+              <a href="" class="btn btn-outline-success btn-lg rounded-pill">
                 Log In/Sign Up
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -216,7 +217,7 @@
         <div class="line"></div>
 
         <!-- bootom -->
-        <div class="row g-2 g-lg-4 bottom">
+        <div class="row g-2 g-md-4 align-items-lg-stretch g-lg-4 bottom">
           <div class="col-6 col-lg-3">
             <div class="custom-card rounded-3 gradient-border">
               <h2 class="color-primary">7k</h2>
@@ -272,7 +273,7 @@
         </div>
 
         <!-- Tab buttons -->
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center custom-scrollbar">
           <ul
             class="gap-16 flex-row w-100 overflow-x-auto border-0 mx-w-fit"
             id="myTab"
@@ -674,6 +675,16 @@
           </div>
         </div>
       </div>
+
+      <!-- buttons -->
+      <div class="d-flex justify-content-center">
+        <a type="button" class="btn btn-lg btn-primary rounded-pill">
+          Explore All Courses
+        </a>
+        <a class="btn btn-p-18 btn-primary rounded-pill">
+          <img src="./images/arrow.svg" alt="" />
+        </a>
+      </div>
     </section>
 
     <!-- TODO: MD screen line show -->
@@ -778,6 +789,7 @@
 
     <!-- Our Instructors -->
     <section class="our-instructors gap-60 flex-column container">
+      <!-- Heading -->
       <div class="gap-16 flex-column align-items-center">
         <button class="small-btn gap-8 flex-row align-items-center mx-auto">
           <div class="circle-8"></div>
@@ -797,33 +809,28 @@
 
       <div class="gap-60 flex-column">
         <div class="row">
-          <img
-            src="./images/teacher-1.svg"
-            alt=""
-            class="col-12 col-sm-6 col-lg-3"
-          />
-          <img
-            src="./images/teacher-2.svg"
-            alt=""
-            class="col-12 col-sm-6 col-lg-3"
-          />
-          <img
-            src="./images/teacher-3.svg"
-            alt=""
-            class="col-12 col-sm-6 col-lg-3"
-          />
-          <img
-            src="./images/teacher-4.svg"
-            alt=""
-            class="col-12 col-sm-6 col-lg-3"
-          />
+          <a href="" class="col-12 col-sm-6 col-lg-3">
+            <img src="./images/teacher-1.svg" alt="" />
+          </a>
+          <a href="" class="col-12 col-sm-6 col-lg-3">
+            <img src="./images/teacher-2.svg" alt="" />
+          </a>
+          <a href="" class="col-12 col-sm-6 col-lg-3">
+            <img src="./images/teacher-3.svg" alt="" />
+          </a>
+          <a href="" class="col-12 col-sm-6 col-lg-3">
+            <img src="./images/teacher-4.svg" alt="" />
+          </a>
         </div>
 
+        <!-- Buttons -->
         <div class="d-flex justify-content-center">
-          <button class="btn btn-lg btn-primary rounded-pill">Read us</button>
-          <button class="btn btn-p-18 btn-primary rounded-pill">
+          <a type="button" class="btn btn-lg btn-primary rounded-pill">
+            See All Teachers
+          </a>
+          <a class="btn btn-p-18 btn-primary rounded-pill">
             <img src="./images/arrow.svg" alt="" />
-          </button>
+          </a>
         </div>
       </div>
     </section>
@@ -874,7 +881,7 @@
 
             <!-- feature -->
             <div class="gap-20 pricing-card-detailes">
-              <p class="p-20">Why should you take this</p>
+              <p class="p-20 fw-medium color-text">Why should you take this</p>
 
               <div class="gap-8 flex-row">
                 <img src="./images/complete.svg" alt="" />
@@ -897,7 +904,7 @@
             <!-- buttons -->
             <div class="d-flex mt-5">
               <button class="btn btn-lg btn-outline-success w-100 rounded-pill">
-                Read All Books
+                Start Your Project
               </button>
               <button class="btn btn-p-18 btn-primary rounded-pill">
                 <img src="./images/arrow.svg" alt="" />
@@ -932,7 +939,7 @@
 
             <!-- feature -->
             <div class="gap-20 pricing-card-detailes">
-              <p class="p-20">Why should you take this</p>
+              <p class="p-20 fw-medium color-text">Why should you take this</p>
 
               <div class="gap-8 flex-row">
                 <img src="./images/complete.svg" alt="" />
@@ -955,7 +962,7 @@
             <!-- buttons -->
             <div class="d-flex mt-5">
               <button class="btn btn-lg btn-outline-success w-100 rounded-pill">
-                Read All Books
+                Start Your Project
               </button>
               <button class="btn btn-p-18 btn-primary rounded-pill">
                 <img src="./images/arrow.svg" alt="" />
@@ -990,7 +997,7 @@
 
             <!-- feature -->
             <div class="gap-20 pricing-card-detailes">
-              <p class="p-20">Why should you take this</p>
+              <p class="p-20 fw-medium color-text">Why should you take this</p>
 
               <div class="gap-8 flex-row">
                 <img src="./images/complete.svg" alt="" />
@@ -1012,8 +1019,8 @@
 
             <!-- buttons -->
             <div class="d-flex mt-5">
-              <button class="btn btn-lg btn-outline-success w-100 rounded-pill">
-                Read All Books
+              <button class="btn btn-lg btn-primary w-100 rounded-pill">
+                Start Your Project
               </button>
               <button class="btn btn-p-18 btn-primary rounded-pill">
                 <img src="./images/arrow.svg" alt="" />
@@ -1039,7 +1046,7 @@
 
         <div class="d-flex justify-content-between pricing--bottom-card-btn">
           <button class="btn btn-lg btn-primary rounded-pill w-100 text-nowrap">
-            Read All Books
+            Contact Us
           </button>
           <button class="btn btn-p-18 btn-primary rounded-pill">
             <img src="./images/arrow.svg" alt="" />
