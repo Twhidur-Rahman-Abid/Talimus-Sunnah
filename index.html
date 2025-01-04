@@ -16,7 +16,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <header class="sticky-top">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
           <!-- Logo Section -->
@@ -808,19 +808,103 @@
       </div>
 
       <div class="gap-60 flex-column">
-        <div class="row">
-          <a href="" class="col-12 col-sm-6 col-lg-3">
-            <img src="./images/teacher-1.svg" alt="" />
-          </a>
-          <a href="" class="col-12 col-sm-6 col-lg-3">
-            <img src="./images/teacher-2.svg" alt="" />
-          </a>
-          <a href="" class="col-12 col-sm-6 col-lg-3">
-            <img src="./images/teacher-3.svg" alt="" />
-          </a>
-          <a href="" class="col-12 col-sm-6 col-lg-3">
-            <img src="./images/teacher-4.svg" alt="" />
-          </a>
+        <div class="row g-4">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div
+              class="rounded-top-pill rounded-bottom-5 position-relative teacher-card"
+            >
+              <img
+                src="./images/teacher.png"
+                alt=""
+                class="rounded-top-pill rounded-bottom-2 object-fit-cover"
+                width="100%"
+                height="400px"
+              />
+              <div
+                class="card border-0 position-absolute start-50 translate-middle-x bg-white flex flex-row justify-content-between align-items-center p-2 rounded-1"
+              >
+                <div>
+                  <h5>Hasom Kanaber</h5>
+                  <p>Al-Azhar University (AU)</p>
+                </div>
+                <div>
+                  <a href=""> <img src="./images/linkedin.svg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div
+              class="rounded-top-pill rounded-bottom-5 position-relative teacher-card"
+            >
+              <img
+                src="./images/teacher.png"
+                alt=""
+                class="rounded-top-pill rounded-bottom-2 object-fit-cover"
+                width="100%"
+                height="400px"
+              />
+              <div
+                class="card border-0 position-absolute start-50 translate-middle-x bg-white flex flex-row justify-content-between align-items-center p-2 rounded-1"
+              >
+                <div>
+                  <h5>Hasom Kanaber</h5>
+                  <p>Al-Azhar University (AU)</p>
+                </div>
+                <div>
+                  <a href=""> <img src="./images/linkedin.svg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div
+              class="rounded-top-pill rounded-bottom-5 position-relative teacher-card"
+            >
+              <img
+                src="./images/teacher.png"
+                alt=""
+                class="rounded-top-pill rounded-bottom-2 object-fit-cover"
+                width="100%"
+                height="400px"
+              />
+              <div
+                class="card border-0 position-absolute start-50 translate-middle-x bg-white flex flex-row justify-content-between align-items-center p-2 rounded-1"
+              >
+                <div>
+                  <h5>Hasom Kanaber</h5>
+                  <p>Al-Azhar University (AU)</p>
+                </div>
+                <div>
+                  <a href=""> <img src="./images/linkedin.svg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div
+              class="rounded-top-pill rounded-bottom-5 position-relative teacher-card"
+            >
+              <img
+                src="./images/teacher.png"
+                alt=""
+                class="rounded-top-pill rounded-bottom-2 object-fit-cover"
+                width="100%"
+                height="400px"
+              />
+              <div
+                class="card border-0 position-absolute start-50 translate-middle-x bg-white flex flex-row justify-content-between align-items-center p-2 rounded-1"
+              >
+                <div>
+                  <h5>Hasom Kanaber</h5>
+                  <p>Al-Azhar University (AU)</p>
+                </div>
+                <div>
+                  <a href=""> <img src="./images/linkedin.svg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Buttons -->
@@ -1201,69 +1285,128 @@
       </div>
     </section>
 
-    <!-- TODO add background -->
     <!--  Testimonial -->
-    <section class="container gap-60 flex-column testimonial">
-      <!-- section heading -->
-      <div class="gap-16 flex-column">
-        <!-- Heading button -->
-        <button class="small-btn gap-8 flex-row align-items-center mx-auto">
-          <div class="circle-8"></div>
-          Testimonial
-        </button>
+    <section class="testimonial position-relative">
+      <img
+        src="./images/testimonial-flower.svg"
+        class="position-absolute top-0 start-0"
+        alt=""
+        width="20%"
+      />
+      <img
+        src="./images/testimonial-flower.svg"
+        class="position-absolute top-0 end-0"
+        alt=""
+        width="20%"
+      />
+      <img
+        src="./images/testimonial-flower.svg"
+        class="position-absolute bottom-0 start-0 left-img-flower"
+        alt=""
+        width="20%"
+      />
+      <img
+        src="./images/testimonial-flower.svg"
+        class="position-absolute bottom-0 end-0"
+        alt=""
+        width="20%"
+      />
 
-        <!-- heading -->
-        <h3 class="section-heading mx-auto">
-          What students say about our
-          <span class="title-container">
-            <span class="highlight"
-              >platform
-              <img class="svg-underline" src="./images/Vector.svg" alt="" />
+      <div class="container gap-60">
+        <!-- section heading -->
+        <div class="gap-16 flex-column">
+          <!-- Heading button -->
+          <button class="small-btn gap-8 flex-row align-items-center mx-auto">
+            <div class="circle-8"></div>
+            Testimonial
+          </button>
+
+          <!-- heading -->
+          <h3 class="section-heading mx-auto">
+            What students say about our
+            <span class="title-container">
+              <span class="highlight"
+                >platform
+                <img class="svg-underline" src="./images/Vector.svg" alt="" />
+              </span>
             </span>
-          </span>
-        </h3>
-      </div>
-
-      <!-- main -->
-      <div
-        class="d-flex flex-wrap flex-lg-nowrap flex-col flex-lg-row justify-content-center justify-content-lg-between align-items-center testimonial-card"
-      >
-        <div
-          class="icon d-flex justify-content-center align-items-center bg-white order-2 order-lg-1"
-        >
-          <img class="" src="./images/i-left-arrow.svg" alt="" width="24px" />
+          </h3>
         </div>
 
-        <div class="gap-40 align-items-center order-1 order-lg-2">
-          <img src="./images/logo-testimonial.svg" alt="" />
-          <p class="fs-5">
-            We provide Quran lessons and all of our courses round the clock.
-            Which help you and your kids to learn holy Quran / all courses
-            quickly and smoothly. We provide Quran lessons and all of our
-            courses round the clock. Which help you and your kids to learn holy
-            Quran / all courses quickly and smoothly.
-          </p>
+        <!-- main -->
+        <div
+          id="carouselExampleControlsNoTouching"
+          data-bs-touch="true"
+          class="carousel slide d-flex flex-wrap flex-lg-nowrap flex-col flex-lg-row justify-content-center justify-content-lg-between align-items-center testimonial-card"
+        >
+          <div
+            type="button"
+            data-bs-target="#carouselExampleControlsNoTouching"
+            data-bs-slide="prev"
+            class="icon carousel-control-prev d-flex justify-content-center align-items-center bg-white order-2 order-lg-1"
+          >
+            <img class="" src="./images/i-left-arrow.svg" alt="" width="24px" />
+          </div>
 
-          <div class="gap-16 flex-row">
-            <img class="" src="./images/avatar.svg" alt="" />
+          <div class="carousel-inner order-1 order-lg-2">
+            <div class="carousel-item active">
+              <div class="gap-40 align-items-center">
+                <img src="./images/logo-testimonial.svg" alt="" />
+                <p class="text">
+                  We provide Quran lessons and all of our courses round the
+                  clock. Which help you and your kids to learn holy Quran / all
+                  courses quickly and smoothly. We provide Quran lessons and all
+                  of our courses round the clock. Which help you and your kids
+                  to learn holy Quran / all courses quickly and smoothly.
+                </p>
 
-            <div
-              class="text-nowrap text-start d-flex flex-column justify-content-between"
-            >
-              <p class="fs-6 fw-medium">Abdul Karim</p>
-              <p class="p-12">Graduate Student</p>
+                <div class="gap-16 flex-row">
+                  <img class="" src="./images/avatar.svg" alt="" />
+
+                  <div
+                    class="text-nowrap text-start d-flex flex-column justify-content-between"
+                  >
+                    <p class="fs-6 fw-medium">Abdul Korim</p>
+                    <p class="p-12">Graduate Student</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="gap-40 align-items-center">
+                <img src="./images/logo-testimonial.svg" alt="" />
+                <p class="text">
+                  We provide Quran lessons and all of our courses round the
+                  clock. Which help you and your kids to learn holy Quran / all
+                  courses quickly and smoothly. We provide Quran lessons and all
+                  of our courses round the clock. Which help you and your kids
+                  to learn holy Quran / all courses quickly and smoothly.
+                </p>
+
+                <div class="gap-16 flex-row">
+                  <img class="" src="./images/avatar.svg" alt="" />
+
+                  <div
+                    class="text-nowrap text-start d-flex flex-column justify-content-between"
+                  >
+                    <p class="fs-6 fw-medium">Abdul</p>
+                    <p class="p-12">Graduate Student</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div
-          class="icon d-flex justify-content-center align-items-center bg-white order-3 rigth-arrow active"
-        >
-          <img class="" src="./images/i-left-arrow.svg" alt="" width="24px" />
+          <div
+            type="button"
+            data-bs-target="#carouselExampleControlsNoTouching"
+            data-bs-slide="next"
+            class="icon carousel-control-next d-flex justify-content-center align-items-center bg-white order-3 rigth-arrow active"
+          >
+            <img class="" src="./images/i-left-arrow.svg" alt="" width="24px" />
+          </div>
         </div>
       </div>
-
-      <div class="ruled-grid"></div>
     </section>
 
     <!-- Blog -->
@@ -1293,7 +1436,10 @@
         <div class="row g-4">
           <!-- card -->
           <div class="col-12 col-lg-4">
-            <div class="blog-card gap-16">
+            <div class="blog-card gap-16 position-relative">
+              <div class="btn btn-lg bg-white position-absolute blog-btn">
+                Quran
+              </div>
               <img src="./images/blog-1.svg" alt="" />
               <h5>
                 How many times Bismillah repeated in
@@ -1308,7 +1454,10 @@
           </div>
 
           <div class="col-12 col-lg-4">
-            <div class="blog-card gap-16">
+            <div class="blog-card gap-16 position-relative">
+              <div class="btn btn-lg bg-white position-absolute blog-btn">
+                Hadith
+              </div>
               <img src="./images/blog-hadith.svg" alt="" />
               <h5>
                 How many times Bismillah repeated in
@@ -1323,7 +1472,10 @@
           </div>
 
           <div class="col-12 col-lg-4">
-            <div class="blog-card gap-16">
+            <div class="blog-card gap-16 position-relative">
+              <div class="btn btn-lg bg-white position-absolute blog-btn">
+                Adhan
+              </div>
               <img src="./images/blog-adhan.svg" alt="" />
               <h5>
                 How many times Bismillah repeated in
@@ -1350,37 +1502,55 @@
       </div>
     </section>
 
-    <!-- TODO add background and make responsive -->
-    <!--  join us -->
-    <!-- <div class="container join-us-container ">
-      <div class="join-us">
-        <div class="join-us-bg gap-24">
-          <h2>
-            Stay With Us <br />
-            Update For Future
-          </h2>
-          <p>
-            Embark on a journey of Islamic knowledge, guided by trusted scholars
-            to inspire hearts and minds, enriching faith and understanding
-          </p>
+    <!-- footer -->
+    <footer class="position-relative">
+      <div
+        class="container join-us-container position-absolute top-0 start-50 translate-middle"
+      >
+        <div class="join-us">
+          <div class="join-us-bg gap-24">
+            <h2>
+              Stay With Us <br />
+              Update For Future
+            </h2>
+            <p>
+              Embark on a journey of Islamic knowledge, guided by trusted
+              scholars to inspire hearts and minds, enriching faith and
+              understanding
+            </p>
 
-          <div class="gap-24 flex-row mx-auto">
-            <input type="text" />
-            <div class="d-flex justify-content-center">
-              <button class="btn btn-lg btn-primary rounded-pill">
-                Join Us
-              </button>
-              <button class="btn btn-p-18 btn-primary rounded-pill">
-                <img src="./images/arrow.svg" alt="" />
-              </button>
+            <div class="mx-lg-auto">
+              <div class="gap-12 flex-md-row mx-auto w-100">
+                <div class="input-group rounded-pill">
+                  <span
+                    class="input-group-text rounded-start-pill bg-white border-0 ps-4"
+                    id="basic-addon1"
+                  >
+                    <img src="./images/mail.svg" alt=""
+                  /></span>
+                  <input
+                    type="text"
+                    class="form-control border-0 ps-0"
+                    placeholder="Username"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button
+                    class="btn btn-lg btn-primary rounded-pill text-nowrap"
+                  >
+                    Join Us
+                  </button>
+                  <button class="btn btn-p-18 btn-primary rounded-pill">
+                    <img src="./images/arrow.svg" alt="" />
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div> -->
-
-    <!-- footer -->
-    <footer class="">
       <div class="container">
         <div class="gap-40">
           <!-- footer top content -->
