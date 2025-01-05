@@ -34,6 +34,7 @@
   --color-background: #f4f5f6;
 
   --color-gray: #545454;
+  --color-gray-100: #3d3d3d;
   --color-border: #d6d6d6;
   --color-border-secondary: #cfe5d2;
   --color-text: #171717;
@@ -408,6 +409,16 @@ section {
 /* -------------------------------------------------------------------------- */
 /*                                   Header                                   */
 /* -------------------------------------------------------------------------- */
+.top-header {
+  background: var(--color-gray-100);
+  .i-white {
+    filter: invert(1) brightness(2);
+  }
+  a {
+    color: white;
+  }
+}
+
 header {
   nav {
     box-shadow: 0px 4px 6px 0px #00000014;
