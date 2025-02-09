@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body style="padding-top: 200px">
+    <h3 class="section-heading mx-auto">
+      Our latest
+      <span class="title-container">
+        <span class="highlight">E-Book </span>
+        <svg
+          style="
+            --strokeLength: 671.2442016601562;
+            --strikeIncrement: 0;
+            --width: calc(129.8854217529297px + 30px);
+            width: var(--width);
+          "
+          class="svg-underline svg-animate"
+          viewBox="0 0 225 93"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2 27.5C33 21.5 166.231 4.40389 202.5 19C238.769 33.5961 218.548 66.7323 194.5 75C170.452 83.2677 75.0481 100.5 26.548 83.5C3.88929 75.5578 1.71462 44.3333 21.548 34.5C29.8813 27.1667 72.448 10.4 176.048 2"
+            stroke="#0DA536"
+            stroke-width="4"
+            stroke-linecap="round"
+          />
+        </svg>
+      </span>
+    </h3>
+    <h3 class="section-heading mx-auto" style="margin-bottom: 100px">
+      Our latest
+      <span class="title-container">
+        <span class="highlight">Eb</span>
+        <svg
+          style="
+            --strokeLength: 671.2442016601562;
+            --strikeIncrement: 0;
+            --width: calc(129.8854217529297px + 30px);
+            width: var(--width);
+          "
+          class="svg-underline svg-animate"
+          viewBox="0 0 225 93"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2 27.5C33 21.5 166.231 4.40389 202.5 19C238.769 33.5961 218.548 66.7323 194.5 75C170.452 83.2677 75.0481 100.5 26.548 83.5C3.88929 75.5578 1.71462 44.3333 21.548 34.5C29.8813 27.1667 72.448 10.4 176.048 2"
+            stroke="#0DA536"
+            stroke-width="4"
+            stroke-linecap="round"
+          />
+        </svg>
+      </span>
+    </h3>
+    <h3 class="section-heading-animated mx-auto">
+      Our latest
+      <span class="title-container">
+        <span class="highlight">Testimonial</span>
+        <svg
+          style="
+            --strokeLength: 671.2442016601562;
+            --strikeIncrement: 0;
+            --width: calc(129.8854217529297px + 30px);
+            width: var(--width);
+          "
+          class="svg-underline svg-animate"
+          viewBox="0 0 225 93"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2 27.5C33 21.5 166.231 4.40389 202.5 19C238.769 33.5961 218.548 66.7323 194.5 75C170.452 83.2677 75.0481 100.5 26.548 83.5C3.88929 75.5578 1.71462 44.3333 21.548 34.5C29.8813 27.1667 72.448 10.4 176.048 2"
+            stroke="#0DA536"
+            stroke-width="4"
+            stroke-linecap="round"
+          />
+        </svg>
+      </span>
+    </h3>
+
+    <div class="py-3"></div>
+
+    <script>
+      // Heading size based on the size of the text
+      const headingSvgSizeing = () => {
+        // Select all section headings
+        const headings = document.querySelectorAll(".section-heading");
+
+        headings.forEach((heading) => {
+          const highlightText = heading.querySelector(".highlight");
+          const svgUnderline = heading.querySelector(".svg-underline");
+
+          if (highlightText && svgUnderline) {
+            // Get the width of the highlight text
+            const highlightTextWidth =
+              highlightText.getBoundingClientRect().width;
+
+            // Update the SVG underline width dynamically
+            svgUnderline.style.setProperty(
+              "width",
+              `${highlightTextWidth + 40}px`
+            );
+
+            // Get the length of the SVG path and set it as a CSS variable
+            const path = svgUnderline.querySelector("path");
+            const strokeLength = path.getTotalLength();
+            svgUnderline.style.setProperty("--strokeLength", strokeLength);
+
+            // For long text
+            if (highlightTextWidth > 150) {
+              svgUnderline.style.top = "-35px";
+            }
+
+            // for small text
+            if (highlightTextWidth < 100) {
+              svgUnderline.style.top = "-10px";
+              svgUnderline.style.height = `${
+                highlightText.getBoundingClientRect().width + 15
+              }px`;
+              svgUnderline.style.transform = "scaleY(1.4)";
+              svgUnderline.style.setProperty(
+                "--width",
+                `${highlightTextWidth + 50}px`
+              );
+            }
+          }
+        });
+      };
+
+      headingSvgSizeing();
+    </script>
+  </body>
+</html>
