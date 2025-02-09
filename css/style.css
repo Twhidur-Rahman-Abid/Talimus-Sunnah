@@ -249,6 +249,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-wrap: nowrap;
 }
 
 .small-btn {
